@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:nest_mobile/splash_view.dart';
-
+import 'package:google_fonts/google_fonts.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -19,7 +19,9 @@ class MyApp extends StatelessWidget {
         builder: (context, child) {
           return MaterialApp(
             title: 'Nest',
-            theme: ThemeData(),
+            theme: ThemeData(
+              fontFamily: GoogleFonts.spaceGrotesk().fontFamily,
+            ),
             home: SplashView(),
           );
         });
