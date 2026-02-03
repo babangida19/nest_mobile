@@ -13,7 +13,9 @@ class SplashView extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Center(child: Assets.icons.iconLogoLight.svg()),
+          Center(
+            child: Assets.icons.iconLogoLight.svg(),
+          ),
         ],
       ),
     );

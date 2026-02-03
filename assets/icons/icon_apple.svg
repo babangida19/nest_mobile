@@ -1,0 +1,24 @@
+<svg width="103" height="103" viewBox="0 0 103 103" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_dd_8_1671)">
+<rect x="19.2" y="3.2002" width="64" height="64" rx="32" fill="white"/>
+<path d="M59.2865 48.4478C57.7185 49.9678 56.0065 49.7278 54.3585 49.0078C52.6145 48.2718 51.0145 48.2398 49.1745 49.0078C46.8705 49.9998 45.6545 49.7118 44.2785 48.4478C36.4705 40.3998 37.6225 28.1438 46.4865 27.6958C48.6465 27.8078 50.1505 28.8798 51.4145 28.9758C53.3025 28.5918 55.1105 27.4878 57.1265 27.6318C59.5425 27.8238 61.3665 28.7838 62.5665 30.5118C57.5745 33.5038 58.7585 40.0798 63.3345 41.9198C62.4225 44.3198 61.2385 46.7038 59.2705 48.4638L59.2865 48.4478ZM51.2545 27.5998C51.0145 24.0318 53.9105 21.0878 57.2385 20.7998C57.7025 24.9278 53.4945 27.9998 51.2545 27.5998Z" fill="black"/>
+</g>
+<defs>
+<filter id="filter0_dd_8_1671" x="-2.86102e-06" y="0.000195503" width="102.4" height="102.4" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feMorphology radius="6.4" operator="erode" in="SourceAlpha" result="effect1_dropShadow_8_1671"/>
+<feOffset dy="6.4"/>
+<feGaussianBlur stdDeviation="4.8"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.0627451 0 0 0 0 0.0941176 0 0 0 0 0.156863 0 0 0 0.1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_8_1671"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feMorphology radius="4.8" operator="erode" in="SourceAlpha" result="effect2_dropShadow_8_1671"/>
+<feOffset dy="16"/>
+<feGaussianBlur stdDeviation="12"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.0627451 0 0 0 0 0.0941176 0 0 0 0 0.156863 0 0 0 0.1 0"/>
+<feBlend mode="normal" in2="effect1_dropShadow_8_1671" result="effect2_dropShadow_8_1671"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_8_1671" result="shape"/>
+</filter>
+</defs>
+</svg>
