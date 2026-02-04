@@ -18,6 +18,13 @@ class AppTextsytle {
     return TextStyle(
         fontSize: fontSize.sp, fontWeight: fontWeight, color: color);
   }
+  static TextStyle size20w500(
+      {double fontSize = 20,
+      FontWeight fontWeight = FontWeight.w500,
+      Color color = AppColor.primary}) {
+    return TextStyle(
+        fontSize: fontSize.sp, fontWeight: fontWeight, color: color);
+  }
 
   static TextStyle size16w500(
       {double fontSize = 16,

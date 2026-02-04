@@ -26,8 +26,13 @@ class $AssetsIconsGen {
   SvgGenImage get iconLogoLight =>
       const SvgGenImage('assets/icons/icon_logo_light.svg');
 
+  /// File path: assets/icons/icon_outline_back.svg
+  SvgGenImage get iconOutlineBack =>
+      const SvgGenImage('assets/icons/icon_outline_back.svg');
+
   /// List of all assets
-  List<SvgGenImage> get values => [iconApple, iconGoogle, iconLogoLight];
+  List<SvgGenImage> get values =>
+      [iconApple, iconGoogle, iconLogoLight, iconOutlineBack];
 }
 
 class $AssetsImagesGen {

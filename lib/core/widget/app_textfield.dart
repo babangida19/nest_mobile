@@ -1,38 +1,43 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:nest_mobile/core/app_color.dart';
+import 'package:nest_mobile/core/app_textsytle.dart';
 
 class AppTextfield extends StatelessWidget {
-  const AppTextfield({super.key});
+  final String labelText;
+  final String hintText;
+  final TextEditingController textEditingController;
+  const AppTextfield({super.key, required this.labelText, required this.hintText, required this.textEditingController});
 
   @override
   Widget build(BuildContext context) {
-    return TextField(
-      decoration: InputDecoration(
-        labelText: 'First Name',
-        floatingLabelBehavior: FloatingLabelBehavior.always, // 👈 key
-        contentPadding: const EdgeInsets.symmetric(
-          horizontal: 20,
-          vertical: 18,
-        ),
-        labelStyle: const TextStyle(
-          color: Color(0xFF98A2B3), // soft grey
-          fontSize: 14,
-        ),
-        hintText: 'Wilkins',
-        hintStyle: const TextStyle(
-          color: Color(0xFF101828),
-          fontSize: 16,
-          fontWeight: FontWeight.w600,
-        ),
-        enabledBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(40), // 👈 pill shape
-          borderSide: const BorderSide(
-            color: Color(0xFFE4E7EC), // light border
+    return Padding(
+      padding: EdgeInsets.symmetric(vertical: 8.h),
+      child: TextField(
+        controller: TextEditingController(),
+        decoration: InputDecoration(
+          labelText: labelText,
+          floatingLabelBehavior: FloatingLabelBehavior.always,
+          contentPadding: EdgeInsets.symmetric(
+            horizontal: 20.w,
+            vertical: 15.h,
           ),
-        ),
-        focusedBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(40),
-          borderSide: const BorderSide(
-            color: Color(0xFFD0D5DD),
+          labelStyle: AppTextsytle.size14w500(
+            color: AppColor.primary900,
+          ),
+          hintText: hintText,
+          hintStyle: const TextStyle(
+            color: Color(0xFF101828),
+            fontSize: 16,
+            fontWeight: FontWeight.w600,
+          ),
+          enabledBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(40), // 👈 pill shape
+            borderSide: const BorderSide(color: AppColor.primary200),
+          ),
+          focusedBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(40),
+            borderSide: const BorderSide(color: AppColor.secondary),
           ),
         ),
       ),
