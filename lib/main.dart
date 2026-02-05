@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:nest_mobile/core/app_color.dart';
-import 'package:nest_mobile/feature/auth/view/sign_in_view.dart';
-import 'package:nest_mobile/feature/auth/view/sign_up_view.dart';
-import 'package:nest_mobile/onboarding_view.dart';
-import 'package:nest_mobile/splash_view.dart';
+ 
 import 'package:google_fonts/google_fonts.dart';
+import 'package:nest_mobile/feature/auth/view/sign_up/sign_up_otp_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -29,7 +27,7 @@ class MyApp extends StatelessWidget {
               scaffoldBackgroundColor: AppColor.white,
               fontFamily: GoogleFonts.spaceGrotesk().fontFamily,
             ),
-            home: SignInView(),
+            home: SignUpOtpView(),
           );
         });
   }

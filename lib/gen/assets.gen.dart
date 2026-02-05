@@ -18,6 +18,10 @@ class $AssetsIconsGen {
   /// File path: assets/icons/icon_apple.svg
   SvgGenImage get iconApple => const SvgGenImage('assets/icons/icon_apple.svg');
 
+  /// File path: assets/icons/icon_charm_tick.svg
+  SvgGenImage get iconCharmTick =>
+      const SvgGenImage('assets/icons/icon_charm_tick.svg');
+
   /// File path: assets/icons/icon_google.svg
   SvgGenImage get iconGoogle =>
       const SvgGenImage('assets/icons/icon_google.svg');
@@ -32,7 +36,7 @@ class $AssetsIconsGen {
 
   /// List of all assets
   List<SvgGenImage> get values =>
-      [iconApple, iconGoogle, iconLogoLight, iconOutlineBack];
+      [iconApple, iconCharmTick, iconGoogle, iconLogoLight, iconOutlineBack];
 }
 
 class $AssetsImagesGen {
