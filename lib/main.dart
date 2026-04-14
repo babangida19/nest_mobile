@@ -4,6 +4,7 @@ import 'package:nest_mobile/core/app_color.dart';
  
 import 'package:google_fonts/google_fonts.dart';
 import 'package:nest_mobile/feature/auth/view/sign_up/sign_up_otp_view.dart';
+import 'package:nest_mobile/feature/main/view/main_view.dart';
 import 'package:nest_mobile/splash_view.dart';
 
 void main() {
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
               scaffoldBackgroundColor: AppColor.white,
               fontFamily: GoogleFonts.spaceGrotesk().fontFamily,
             ),
-            home: SplashView(),
+            home: MainView(),
           );
         });
   }

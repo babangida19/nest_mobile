@@ -18,36 +18,93 @@ class $AssetsIconsGen {
   /// File path: assets/icons/icon_apple.svg
   SvgGenImage get iconApple => const SvgGenImage('assets/icons/icon_apple.svg');
 
+  /// File path: assets/icons/icon_bookmark.svg
+  SvgGenImage get iconBookmark =>
+      const SvgGenImage('assets/icons/icon_bookmark.svg');
+
+  /// File path: assets/icons/icon_bookmark_selected.svg
+  SvgGenImage get iconBookmarkSelected =>
+      const SvgGenImage('assets/icons/icon_bookmark_selected.svg');
+
   /// File path: assets/icons/icon_charm_tick.svg
   SvgGenImage get iconCharmTick =>
       const SvgGenImage('assets/icons/icon_charm_tick.svg');
+
+  /// File path: assets/icons/icon_chat.svg
+  SvgGenImage get iconChat => const SvgGenImage('assets/icons/icon_chat.svg');
 
   /// File path: assets/icons/icon_google.svg
   SvgGenImage get iconGoogle =>
       const SvgGenImage('assets/icons/icon_google.svg');
 
+  /// File path: assets/icons/icon_home.svg
+  SvgGenImage get iconHome => const SvgGenImage('assets/icons/icon_home.svg');
+
+  /// File path: assets/icons/icon_home_selected.svg
+  SvgGenImage get iconHomeSelected =>
+      const SvgGenImage('assets/icons/icon_home_selected.svg');
+
+  /// File path: assets/icons/icon_location.svg
+  SvgGenImage get iconLocation =>
+      const SvgGenImage('assets/icons/icon_location.svg');
+
   /// File path: assets/icons/icon_logo_light.svg
   SvgGenImage get iconLogoLight =>
       const SvgGenImage('assets/icons/icon_logo_light.svg');
+
+  /// File path: assets/icons/icon_message_selected.svg
+  SvgGenImage get iconMessageSelected =>
+      const SvgGenImage('assets/icons/icon_message_selected.svg');
+
+  /// File path: assets/icons/icon_notification.svg
+  SvgGenImage get iconNotification =>
+      const SvgGenImage('assets/icons/icon_notification.svg');
 
   /// File path: assets/icons/icon_outline_back.svg
   SvgGenImage get iconOutlineBack =>
       const SvgGenImage('assets/icons/icon_outline_back.svg');
 
+  /// File path: assets/icons/icon_profile.svg
+  SvgGenImage get iconProfile =>
+      const SvgGenImage('assets/icons/icon_profile.svg');
+
+  /// File path: assets/icons/icon_profile_selected.svg
+  SvgGenImage get iconProfileSelected =>
+      const SvgGenImage('assets/icons/icon_profile_selected.svg');
+
   /// List of all assets
-  List<SvgGenImage> get values =>
-      [iconApple, iconCharmTick, iconGoogle, iconLogoLight, iconOutlineBack];
+  List<SvgGenImage> get values => [
+        iconApple,
+        iconBookmark,
+        iconBookmarkSelected,
+        iconCharmTick,
+        iconChat,
+        iconGoogle,
+        iconHome,
+        iconHomeSelected,
+        iconLocation,
+        iconLogoLight,
+        iconMessageSelected,
+        iconNotification,
+        iconOutlineBack,
+        iconProfile,
+        iconProfileSelected
+      ];
 }
 
 class $AssetsImagesGen {
   const $AssetsImagesGen();
+
+  /// File path: assets/images/image_user_profile.png
+  AssetGenImage get imageUserProfile =>
+      const AssetGenImage('assets/images/image_user_profile.png');
 
   /// File path: assets/images/onboarding_image.jpg
   AssetGenImage get onboardingImage =>
       const AssetGenImage('assets/images/onboarding_image.jpg');
 
   /// List of all assets
-  List<AssetGenImage> get values => [onboardingImage];
+  List<AssetGenImage> get values => [imageUserProfile, onboardingImage];
 }
 
 class Assets {
