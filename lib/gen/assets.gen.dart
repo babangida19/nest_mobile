@@ -18,6 +18,13 @@ class $AssetsIconsGen {
   /// File path: assets/icons/icon_apple.svg
   SvgGenImage get iconApple => const SvgGenImage('assets/icons/icon_apple.svg');
 
+  /// File path: assets/icons/icon_bath.svg
+  SvgGenImage get iconBath => const SvgGenImage('assets/icons/icon_bath.svg');
+
+  /// File path: assets/icons/icon_bedroom.svg
+  SvgGenImage get iconBedroom =>
+      const SvgGenImage('assets/icons/icon_bedroom.svg');
+
   /// File path: assets/icons/icon_bookmark.svg
   SvgGenImage get iconBookmark =>
       const SvgGenImage('assets/icons/icon_bookmark.svg');
@@ -64,6 +71,10 @@ class $AssetsIconsGen {
   SvgGenImage get iconOutlineBack =>
       const SvgGenImage('assets/icons/icon_outline_back.svg');
 
+  /// File path: assets/icons/icon_parking_space.svg
+  SvgGenImage get iconParkingSpace =>
+      const SvgGenImage('assets/icons/icon_parking_space.svg');
+
   /// File path: assets/icons/icon_profile.svg
   SvgGenImage get iconProfile =>
       const SvgGenImage('assets/icons/icon_profile.svg');
@@ -75,6 +86,8 @@ class $AssetsIconsGen {
   /// List of all assets
   List<SvgGenImage> get values => [
         iconApple,
+        iconBath,
+        iconBedroom,
         iconBookmark,
         iconBookmarkSelected,
         iconCharmTick,
@@ -87,6 +100,7 @@ class $AssetsIconsGen {
         iconMessageSelected,
         iconNotification,
         iconOutlineBack,
+        iconParkingSpace,
         iconProfile,
         iconProfileSelected
       ];
@@ -94,6 +108,10 @@ class $AssetsIconsGen {
 
 class $AssetsImagesGen {
   const $AssetsImagesGen();
+
+  /// File path: assets/images/image_house.png
+  AssetGenImage get imageHouse =>
+      const AssetGenImage('assets/images/image_house.png');
 
   /// File path: assets/images/image_user_profile.png
   AssetGenImage get imageUserProfile =>
@@ -104,7 +122,8 @@ class $AssetsImagesGen {
       const AssetGenImage('assets/images/onboarding_image.jpg');
 
   /// List of all assets
-  List<AssetGenImage> get values => [imageUserProfile, onboardingImage];
+  List<AssetGenImage> get values =>
+      [imageHouse, imageUserProfile, onboardingImage];
 }
 
 class Assets {

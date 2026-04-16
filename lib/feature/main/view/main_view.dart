@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:nest_mobile/core/app_color.dart';
 import 'package:nest_mobile/core/app_textsytle.dart';
 import 'package:nest_mobile/feature/home/home_view.dart';
 import 'package:nest_mobile/gen/assets.gen.dart';
- 
 
 class MainView extends HookWidget {
   const MainView({super.key});
@@ -48,41 +46,39 @@ class MainView extends HookWidget {
               ),
             ),
             child: NavigationBar(
-            backgroundColor: Colors.white,
-            elevation: 0,
-            height: 50.h,
-            selectedIndex: selectedIndex.value,
-            onDestinationSelected: onDestinationSelected,
-            indicatorColor: AppColor.white.withOpacity(0.1),
-            indicatorShape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(12.r),
+              backgroundColor: Colors.white,
+              elevation: 0,
+              height: 50.h,
+              selectedIndex: selectedIndex.value,
+              onDestinationSelected: onDestinationSelected,
+              indicatorColor: AppColor.white.withOpacity(0.1),
+              indicatorShape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(12.r),
+              ),
+              animationDuration: Duration(milliseconds: 400),
+              destinations: [
+                NavigationDestination(
+                  icon: Assets.icons.iconHome.svg(),
+                  selectedIcon: Assets.icons.iconHomeSelected.svg(),
+                  label: "Home",
+                ),
+                NavigationDestination(
+                  icon: Assets.icons.iconChat.svg(),
+                  selectedIcon: Assets.icons.iconMessageSelected.svg(),
+                  label: "Chat",
+                ),
+                NavigationDestination(
+                  icon: Assets.icons.iconBookmark.svg(),
+                  selectedIcon: Assets.icons.iconBookmarkSelected.svg(),
+                  label: "Saved",
+                ),
+                NavigationDestination(
+                  icon: Assets.icons.iconProfile.svg(),
+                  selectedIcon: Assets.icons.iconProfileSelected.svg(),
+                  label: "Profile",
+                ),
+              ],
             ),
-            animationDuration: Duration(milliseconds: 400),
-            destinations: [
-          
-              NavigationDestination(
-                icon: Assets.icons.iconHome.svg(),
-                selectedIcon: Assets.icons.iconHomeSelected.svg(),
-                label: "Home",
-              ),
-              NavigationDestination(
-                icon: Assets.icons.iconChat.svg(),
-                selectedIcon: Assets.icons.iconMessageSelected.svg(),
-                label: "Chat",
-              ),
-               NavigationDestination(
-                icon: Assets.icons.iconBookmark.svg(),
-                selectedIcon: Assets.icons.iconBookmarkSelected.svg(),
-                label: "Saved",
-              ),
-              NavigationDestination(
-                icon: Assets.icons.iconProfile.svg(),
-            
-                selectedIcon: Assets.icons.iconProfileSelected.svg(),
-                label: "Profile",
-              ),
-            ],
-          ),
           ),
         ),
       ),
@@ -97,7 +93,7 @@ class MainView extends HookWidget {
       case 1:
         return Center(
           child: Text(
-            'Bookmarks',
+            'Chat',
             style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
           ),
         );
