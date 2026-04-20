@@ -33,12 +33,19 @@ class $AssetsIconsGen {
   SvgGenImage get iconBookmarkSelected =>
       const SvgGenImage('assets/icons/icon_bookmark_selected.svg');
 
+  /// File path: assets/icons/icon_call.svg
+  SvgGenImage get iconCall => const SvgGenImage('assets/icons/icon_call.svg');
+
   /// File path: assets/icons/icon_charm_tick.svg
   SvgGenImage get iconCharmTick =>
       const SvgGenImage('assets/icons/icon_charm_tick.svg');
 
   /// File path: assets/icons/icon_chat.svg
   SvgGenImage get iconChat => const SvgGenImage('assets/icons/icon_chat.svg');
+
+  /// File path: assets/icons/icon_filter.svg
+  SvgGenImage get iconFilter =>
+      const SvgGenImage('assets/icons/icon_filter.svg');
 
   /// File path: assets/icons/icon_google.svg
   SvgGenImage get iconGoogle =>
@@ -90,8 +97,10 @@ class $AssetsIconsGen {
         iconBedroom,
         iconBookmark,
         iconBookmarkSelected,
+        iconCall,
         iconCharmTick,
         iconChat,
+        iconFilter,
         iconGoogle,
         iconHome,
         iconHomeSelected,

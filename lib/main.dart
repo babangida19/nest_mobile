@@ -28,6 +28,10 @@ class MyApp extends StatelessWidget {
             theme: ThemeData(
               scaffoldBackgroundColor: AppColor.white,
               fontFamily: GoogleFonts.spaceGrotesk().fontFamily,
+              appBarTheme: AppBarTheme(
+                backgroundColor: Colors.white,
+                
+              ),
             ),
             home: MainView(),
           );

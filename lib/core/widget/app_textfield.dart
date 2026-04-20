@@ -4,7 +4,7 @@ import 'package:nest_mobile/core/app_color.dart';
 import 'package:nest_mobile/core/app_textsytle.dart';
 
 class AppTextfield extends StatelessWidget {
-  final String labelText;
+  final String? labelText;
   final String hintText;
   final TextEditingController textEditingController;
   const AppTextfield({super.key, required this.labelText, required this.hintText, required this.textEditingController});

@@ -18,6 +18,7 @@ class AppTextsytle {
     return TextStyle(
         fontSize: fontSize.sp, fontWeight: fontWeight, color: color);
   }
+
   static TextStyle size20w500(
       {double fontSize = 20,
       FontWeight fontWeight = FontWeight.w500,
@@ -25,7 +26,13 @@ class AppTextsytle {
     return TextStyle(
         fontSize: fontSize.sp, fontWeight: fontWeight, color: color);
   }
-
+  static TextStyle size16w600(
+      {double fontSize = 16,
+      FontWeight fontWeight = FontWeight.w600,
+      Color color = AppColor.primary}) {
+    return TextStyle(
+        fontSize: fontSize.sp, fontWeight: fontWeight, color: color);
+  }
   static TextStyle size16w500(
       {double fontSize = 16,
       FontWeight fontWeight = FontWeight.w500,
@@ -49,6 +56,7 @@ class AppTextsytle {
     return TextStyle(
         fontSize: fontSize.sp, fontWeight: fontWeight, color: color);
   }
+
   static TextStyle size14w500(
       {double fontSize = 14,
       FontWeight fontWeight = FontWeight.w500,
@@ -56,9 +64,18 @@ class AppTextsytle {
     return TextStyle(
         fontSize: fontSize.sp, fontWeight: fontWeight, color: color);
   }
+
   static TextStyle size12w500(
       {double fontSize = 12,
       FontWeight fontWeight = FontWeight.w500,
+      Color color = AppColor.primary1000}) {
+    return TextStyle(
+        fontSize: fontSize.sp, fontWeight: fontWeight, color: color);
+  }
+
+  static TextStyle size12w400(
+      {double fontSize = 12,
+      FontWeight fontWeight = FontWeight.w400,
       Color color = AppColor.primary1000}) {
     return TextStyle(
         fontSize: fontSize.sp, fontWeight: fontWeight, color: color);
