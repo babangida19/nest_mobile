@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:nest_mobile/core/app_color.dart';
 import 'package:nest_mobile/core/app_textsytle.dart';
+import 'package:nest_mobile/core/widget/app_bottomsheet.dart';
 import 'package:nest_mobile/core/widget/app_button.dart';
+import 'package:nest_mobile/feature/property_detail/widget/schedule_modal.dart';
 import 'package:nest_mobile/gen/assets.gen.dart';
 
 class PropertyDetailView extends StatelessWidget {
@@ -20,7 +22,9 @@ class PropertyDetailView extends StatelessWidget {
               Expanded(
                 child: AppButton(
                   title: "Schedule  ",
-                  onTap: () {},
+                  onTap: () {
+                    customBottomSheet(context, ScheduleInspectionModal());
+                  },
                   buttonType: AppButtonType.border,
                   // borderColor: AppColor.primary300,
                   textColor: AppColor.primary,

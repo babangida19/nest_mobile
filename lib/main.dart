@@ -28,6 +28,9 @@ class MyApp extends StatelessWidget {
             theme: ThemeData(
               scaffoldBackgroundColor: AppColor.white,
               fontFamily: GoogleFonts.spaceGrotesk().fontFamily,
+              dividerTheme: DividerThemeData(
+                color: AppColor.primary200,
+              ),
               appBarTheme: AppBarTheme(
                 backgroundColor: Colors.white,
                 

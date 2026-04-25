@@ -46,7 +46,7 @@ class AppButton extends StatelessWidget {
     final bgColor = buttonType == AppButtonType.text
         ? Colors.transparent
         : buttonType == AppButtonType.border
-            ? borderBGcolor ?? Colors.transparent
+            ? borderBGcolor ?? Colors.red
             : backgroundColor;
 
     final hasBorder = buttonType == AppButtonType.border;
