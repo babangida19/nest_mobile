@@ -90,6 +90,18 @@ class $AssetsIconsGen {
   SvgGenImage get iconProfileSelected =>
       const SvgGenImage('assets/icons/icon_profile_selected.svg');
 
+  /// File path: assets/icons/icon_support.svg
+  SvgGenImage get iconSupport =>
+      const SvgGenImage('assets/icons/icon_support.svg');
+
+  /// File path: assets/icons/icon_term_and_condition.svg
+  SvgGenImage get iconTermAndCondition =>
+      const SvgGenImage('assets/icons/icon_term_and_condition.svg');
+
+  /// File path: assets/icons/icon_user_profile.svg
+  SvgGenImage get iconUserProfile =>
+      const SvgGenImage('assets/icons/icon_user_profile.svg');
+
   /// List of all assets
   List<SvgGenImage> get values => [
         iconApple,
@@ -111,7 +123,10 @@ class $AssetsIconsGen {
         iconOutlineBack,
         iconParkingSpace,
         iconProfile,
-        iconProfileSelected
+        iconProfileSelected,
+        iconSupport,
+        iconTermAndCondition,
+        iconUserProfile
       ];
 }
 

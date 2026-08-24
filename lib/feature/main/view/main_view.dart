@@ -4,6 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:nest_mobile/core/app_color.dart';
 import 'package:nest_mobile/core/app_textsytle.dart';
 import 'package:nest_mobile/feature/home/home_view.dart';
+import 'package:nest_mobile/feature/profile/view/profile_view.dart';
 import 'package:nest_mobile/gen/assets.gen.dart';
 
 class MainView extends HookWidget {
@@ -104,6 +105,8 @@ class MainView extends HookWidget {
             style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
           ),
         );
+      case 3:
+        return ProfileView();
       default:
         return Container();
     }
