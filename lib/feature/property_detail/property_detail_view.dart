@@ -26,9 +26,8 @@ class PropertyDetailView extends StatelessWidget {
                     customBottomSheet(context, ScheduleInspectionModal());
                   },
                   buttonType: AppButtonType.border,
-                  // borderColor: AppColor.primary300,
-                  textColor: AppColor.primary,
-                  backgroundColor: AppColor.white,
+                  borderBGcolor: AppColor.white,
+                  borderColor: AppColor.primary300,
                   fontSize: 16,
                   height: 56,
                 ),
